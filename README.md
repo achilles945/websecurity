@@ -24,12 +24,12 @@ This project focuses on conducting a **penetration test** on a web application f
 ---
 
 ## 🎯 Scope  
-- **Target:** [Specify the web application type, e.g., "E-commerce site", "CMS-based website"]  
-- **Testing Approach:** **Black-box, Grey-box, or White-box**  
+- **Target:** BWAPP  
+- **Testing Approach:** **Black-box** 
 - **Vulnerabilities Covered:**  
   - OWASP Top 10 (2021)  
   - Additional security misconfigurations  
-- **Testing Environment:** **(Local, Staging, or Production)**  
+- **Testing Environment:** **Local** 
 
 ---
 
@@ -47,9 +47,9 @@ This penetration test follows the **OWASP Testing Guide** and consists of:
 
 ## 🛠️ Tools Used  
 The following tools were used for testing:  
-- **Reconnaissance:** `Nmap, Amass, Subfinder, WhatWeb`  
+- **Reconnaissance:** `Nmap`  
 - **Scanning:** `Nikto, Dirb, Gobuster, Burp Suite`  
-- **Exploitation:** `SQLmap, XSSer, Metasploit, Custom Scripts`  
+- **Exploitation:** `SQLmap, Metasploit, Custom Scripts`  
 - **Post-Exploitation:** `Mimikatz, Hashcat`  
 
 ---
