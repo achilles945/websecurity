@@ -24,7 +24,7 @@ This project focuses on conducting a **penetration test** on a web application f
 ---
 
 ## 🎯 Scope  
-- **Target:** BWAPP  
+- **Target:** OWASP Juice-Shop  
 - **Testing Approach:** **Black-box** 
 - **Vulnerabilities Covered:**  
   - OWASP Top 10 (2021)  
