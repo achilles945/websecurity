@@ -55,7 +55,7 @@
 ### Result
 
     -Banner Grabbing
-        -HTTP/1.1 200 OK
+        HTTP/1.1 200 OK
         Accept-Ranges: bytes
         Access-Control-Allow-Origin: *
         Cache-Control: public, max-age=0
@@ -113,17 +113,151 @@
 
 ## Enumerate Application on Webserver
 
+### Summary
+
+    - Identifying web application on a given infrastructure
+    - The latter is usually specified as set of IP addresses, but may consist of a set of DNS symbolic names or a mix of the two
+
+### Test Objectives
+
+    - Enumerate the applications within scope that exist on a web server.
+
+### How to Test
+
+    - Assessment should idenify all the application accessible through given target
+    - Internet Facing web servers
+        - DNS and reverse-IP web-based search services and the use of search engines
+    - Different Base URL
+    - Non-standard Ports
+    - Virtual Hosts
+
+### Result
+    - Non-standard URLs
+        - https://juice-shop.herokuapp.com/#/
+        - https://juice-shop.herokuapp.com/%23/
+        - https://juice-shop.herokuapp.com/?ref=nullsweep.com#/
+    
+    - Non-standard Ports
+        - nmap -Pn -sT -sV --top-port 10 juice-shop.herokuapp.com
+            Nmap scan report for juice-shop.herokuapp.com (46.137.15.86)
+            Host is up (0.14s latency).
+            Other addresses for juice-shop.herokuapp.com (not scanned): 54.73.53.134 54.220.192.176
+            rDNS record for 46.137.15.86: ec2-46-137-15-86.eu-west-1.compute.amazonaws.com
+
+            PORT     STATE SERVICE        VERSION
+            21/tcp   open  ftp?
+            22/tcp   open  ssh?
+            23/tcp   open  telnet?
+            25/tcp   open  smtp?
+            80/tcp   open  http           heroku-router
+            110/tcp  open  pop3?
+            139/tcp  open  netbios-ssn?
+            443/tcp  open  ssl/https      heroku-router
+            445/tcp  open  microsoft-ds?
+            3389/tcp open  ms-wbt-server?
+            2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+            ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+            SF-Port80-TCP:V=7.94SVN%I=7%D=3/29%Time=67E7F22D%P=x86_64-pc-linux-gnu%r(G
+            SF:etRequest,BF,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20n
+            SF:o-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\
+            SF:nDate:\x202025-03-29\x2007:44:25\.08047647\x20\+0000\x20UTC\r\nServer:\
+            SF:x20heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,C0,"HT
+            SF:TP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-s
+            SF:tore\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-0
+            SF:3-29\x2007:44:25\.509563838\x20\+0000\x20UTC\r\nServer:\x20heroku-route
+            SF:r\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,BF,"HTTP/1\.0\x
+            SF:20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store\r\nC
+            SF:ontent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-03-29\x200
+            SF:7:44:36\.14991842\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\nConte
+            SF:nt-Length:\x200\r\n\r\n");
+            ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+            SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=3/29%Time=67E7F237%P=x86_64-pc-linux-
+            SF:gnu%r(GetRequest,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Contro
+            SF:l:\x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=u
+            SF:tf-8\r\nDate:\x202025-03-29\x2007:44:33\.264921586\x20\+0000\x20UTC\r\n
+            SF:Server:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOption
+            SF:s,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,
+            SF:\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x
+            SF:202025-03-29\x2007:44:35\.936724375\x20\+0000\x20UTC\r\nServer:\x20hero
+            SF:ku-router\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,C0,"HTT
+            SF:P/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-st
+            SF:ore\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202025-03
+            SF:-29\x2007:44:38\.793607217\x20\+0000\x20UTC\r\nServer:\x20heroku-router
+            SF:\r\nContent-Length:\x200\r\n\r\n");
+
+            Read data files from: /usr/bin/../share/nmap
+            Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+            Nmap done: 1 IP address (1 host up) scanned in 197.74 seconds
+
+        - telnet
+
+
+
+
+    - Virtual Hosts
+        - nslookup
+            nslookup juice-shop.herokuapp.com
+                Server:		192.168.2.2
+                Address:	192.168.2.2#53
+
+                Non-authoritative answer:
+                Name:	juice-shop.herokuapp.com
+                Address: 54.73.53.134
+                Name:	juice-shop.herokuapp.com
+                Address: 54.220.192.176
+                Name:	juice-shop.herokuapp.com
+                Address: 46.137.15.86
+
 
 
 
 ## Review Webpage Content for Information Leakage
 
+### Summary
 
+    - Comments and metadata included into the HTML code might reveal internal information that should not be available to potential attackers
+    - A review should be done in order to determine if any sensitive information leaked which could be used by attackers for abuse.
+
+### Test Objectives
+
+    - Review webpage comments and metadata to find any information leakage.
+    - Gather JavaScript files and review the JS code to better understand the application and to find any information leakage.
+    - Identify if source map files or other front-end debug files exist.
+
+
+### How to Test
+
+    - Review webpage comments and metadata
+    - Identifying JavaScript Code and Gathering JavaScript Files
+    - Identifying Source Map Files
+
+### Result
+
+    - Review webpage comments and metadata
+    - Identifying JavaScript Code and Gathering JavaScript Files
+
+
+    - Identifying Source Map Files
 
 
 ## Identify Application Entry Points
 
+### Summary
 
+    - Identify and map out areas within the application that should be investigated once enumeration and mapping have been completed
+
+### Test Objectives
+
+    - Identify possible entry and injection points through request and response analysis.
+
+### How to Test
+
+    - Requests
+
+
+    - Responses
+
+### Result
 
 
 ## Map Execution Paths Through Application
