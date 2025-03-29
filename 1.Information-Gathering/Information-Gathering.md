@@ -253,14 +253,72 @@
 ### How to Test
 
     - Requests
-
-
     - Responses
+    - Black-Box Test
+        - GET
+        - POST
 
 ### Result
 
+    - Black-Box Testing
+        - GET
+            GET / HTTP/1.1
+            Host: juice-shop.herokuapp.com
+            Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=wkhOtOS5HXtKcrINT9sZFyfzH6uYh2ImTLQuoYtayIq9s4zho2InBF5vfRES7Yt9DcZvSDkUgzuKqtOPcvvIx5fMoSPoH9oCmkIoETaj
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+            Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+            Accept-Language: en-US,en;q=0.5
+            Accept-Encoding: gzip, deflate, br
+            Upgrade-Insecure-Requests: 1
+            Sec-Fetch-Dest: document
+            Sec-Fetch-Mode: navigate
+            Sec-Fetch-Site: none
+            Sec-Fetch-User: ?1
+            Priority: u=0, i
+            Te: trailers
+            Connection: close
+
+
+
+        - POST
+            POST /socket.io/?EIO=4&transport=polling&t=PNYOQuf&sid=4qyTfb6sxoWofWPHABlU HTTP/1.1
+            Host: juice-shop.herokuapp.com
+            Cookie: language=en; welcomebanner_status=dismiss; cookieconsent_status=dismiss; continueCode=wkhOtOS5HXtKcrINT9sZFyfzH6uYh2ImTLQuoYtayIq9s4zho2InBF5vfRES7Yt9DcZvSDkUgzuKqtOPcvvIx5fMoSPoH9oCmkIoETaj
+            User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+            Accept: */*
+            Accept-Language: en-US,en;q=0.5
+            Accept-Encoding: gzip, deflate, br
+            Content-Type: text/plain;charset=UTF-8
+            Content-Length: 2
+            Origin: https://juice-shop.herokuapp.com
+            Referer: https://juice-shop.herokuapp.com/
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: cors
+            Sec-Fetch-Site: same-origin
+            Te: trailers
+            Connection: close
+
+            40
+
 
 ## Map Execution Paths Through Application
+
+### Summary
+
+    - Understanding the structure of the application is paramount.
+    - Understanding layout of application before testing throughly
+
+### Test Objectives
+
+    - Map the target application and understand the principal workflows.
+
+### How to Test
+
+    - Path
+    - Data Flow (or Taint Analysis)
+    - Race
+
+### Result
 
 
 
@@ -269,15 +327,52 @@
 
 
 
+### Summary
 
-## Fingerprint Web Application
+    - well known web applications have known HTML headers, cookies, and directory structures that can be enumerated to identify the application.
+    - Most of the web frameworks have several markers in those locations which help an attacker or tester to recognize them.
+
+### Test Objectives
+
+    - Fingerprint the components being used by the web applications.
+
+### How to Test
+
+    - HTTP headers
+    - Cookies
+    - HTML source code
+    - Specific files and folders
+    - File extensions
+    - Error messages
 
 
+### Result
+
+    - HTTP headers
+        - 
+    - Cookies
+    - HTML source code
+    - Specific files and folders
+    - File extensions
+    - Error messages
 
 
 ## Map Application Architecture
 
+### Summary
 
+    - Before performing an in-depth review it is necessary to map the network and application architecture. 
+    - The different elements that make up the infrastructure need to be determined to understand how they interact with a web application and how they affect security.
+
+### Test Objectives
+
+    - Generate a map of the application at hand based on the research conducted.
+
+### How to Test
+
+    - Map the Application Architecture
+
+### Result
 
 
 
