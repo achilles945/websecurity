@@ -1,7 +1,7 @@
 # 🛡️ Web Application Penetration Testing Project
 
 ## 📌 Introduction  
-This project focuses on conducting a **penetration test** on a web application following the **OWASP Top 10 methodology**. The repository includes:  
+This project focuses on conducting a **penetration test** on the **OWASP Juice Shop** web application, following the **PTES (Penetration Testing Execution Standard)** methodology as the primary framework. Additionally, the **OWASP WSTG (Web Security Testing Guide)** is integrated within the process, and the **OWASP Top 10 vulnerabilities** are exploited during the testing. The repository includes:  
 ✔️ A structured **pentesting methodology**  
 ✔️ Automated **testing scripts**  
 ✔️ Detailed **vulnerability reports**  
@@ -25,21 +25,24 @@ This project focuses on conducting a **penetration test** on a web application f
 
 ## 🎯 Scope  
 - **Target:** OWASP Juice-Shop  
-- **Testing Approach:** **Black-box** 
+- **Testing Approach:** **Black-box**  
 - **Vulnerabilities Covered:**  
-  - OWASP Top 10 (2021)  
-  - Additional security misconfigurations  
-- **Testing Environment:** **Local** 
+  - **OWASP Top 10 (2021)**  
+  - **Additional security misconfigurations**  
+- **Testing Environment:** **Local**  
 
 ---
 
 ## 🛠️ Methodology  
-This penetration test follows the **OWASP Testing Guide** and consists of:  
-1. **Reconnaissance** – Information gathering (subdomains, technologies, endpoints).  
-2. **Scanning & Enumeration** – Finding exposed services & vulnerabilities.  
-3. **Exploitation** – Running attacks using scripts & manual techniques.  
+This penetration test follows the **PTES methodology** as the primary approach, with integration of the **OWASP Web Security Testing Guide (WSTG)**. The methodology consists of:
+
+1. **Intelligence Gathering** – Information gathering (subdomains, technologies, endpoints).  
+2. **Vulnerability Analysis** – Identifying exposed services and vulnerabilities.  
+3. **Exploitation** – Running attacks using scripts & manual techniques, exploiting OWASP Top 10 vulnerabilities.
 4. **Post-Exploitation** – Assessing data exposure & privilege escalation.  
 5. **Reporting & Remediation** – Documenting findings and recommending fixes.  
+
+Additionally, this test leverages the **OWASP WSTG** guidelines for thorough and comprehensive security assessments.
 
 📖 Detailed methodology can be found in **[Docs/Methodology.md](Docs/Methodology.md)**.  
 
