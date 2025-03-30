@@ -3,6 +3,10 @@
 ## 1. Introduction
 This document outlines the penetration testing methodology followed for the **Web Application Penetration Testing Project**. The test uses the **Penetration Testing Execution Standard (PTES)** as the primary framework, with integrated testing guidelines from the **OWASP Web Security Testing Guide (WSTG)**. The objective of the penetration test is to identify and exploit security vulnerabilities, providing remediation suggestions for each finding.
 
+This penetration test is conducted on a **local instance** of the **OWASP Juice Shop** web application, which is intentionally vulnerable and designed for educational purposes. All testing activities are confined to this local environment, ensuring that no real systems or applications are affected.
+
+**Note:** This testing is for **educational purposes only** and performed in a safe, isolated, and authorized environment.
+
 ---
 
 ## 2. Phases of the Penetration Test
@@ -100,9 +104,9 @@ These guidelines ensure that we cover all the critical areas of web application 
 ---
 
 ## 5. Ethical Guidelines and Legal Considerations
-Penetration testing should always be conducted in an ethical manner with full authorization from the target system owner. The testing must comply with the laws and regulations of the country or region in which it is conducted. Unauthorized testing can result in legal consequences.
+Since this project involves testing a local instance of the OWASP Juice Shop, ethical and legal considerations are minimal. However, in any real-world penetration testing scenario, ensure proper authorization is obtained, and all testing is done within legal boundaries to avoid unauthorized access to systems.
 
 ---
 
 ## 6. Conclusion
-The structured approach provided by PTES and OWASP WSTG ensures a thorough and effective penetration testing process. By following these phases, we can identify security vulnerabilities, demonstrate their potential impact, and provide practical remediation steps to improve the overall security of the web application.
+The structured approach provided by **PTES** and **OWASP WSTG** ensures a thorough and effective penetration testing process. By following these phases, we can identify security vulnerabilities, demonstrate their potential impact, and provide practical remediation steps to improve the overall security of the web application. This methodology not only ensures comprehensive security testing but also enhances our understanding of web application security, which is crucial for both educational purposes and real-world applications.
