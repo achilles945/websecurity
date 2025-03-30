@@ -15,7 +15,7 @@ Each vulnerability should be documented with the following details:
 - **Proof-of-Concept**: [Screenshot, video, or code demonstrating exploitation]
 - **Remediation**: [Steps to fix the vulnerability]
 
-## Example Vulnerability Report
+## Vulnerability Report
 
 ### Vulnerability 1: SQL Injection
 
