@@ -1,0 +1,114 @@
+Processed,Method,URI,Flags
+true,GET,http://192.168.2.130:3000/,Seed
+true,GET,http://192.168.2.130:3000/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/ftp,
+true,GET,http://192.168.2.130:3000/ftp/,
+true,GET,http://192.168.2.130:3000/ftp/acquisitions.md,
+true,GET,http://192.168.2.130:3000/ftp/announcement_encrypted.md,
+true,GET,http://192.168.2.130:3000/ftp/coupons_2013.md.bak,
+true,GET,http://192.168.2.130:3000/ftp/eastere.gg,
+true,GET,http://192.168.2.130:3000/ftp/encrypt.pyc,
+true,GET,http://192.168.2.130:3000/ftp/incident-support.kdbx,
+true,GET,http://192.168.2.130:3000/ftp/legal.md,
+true,GET,http://192.168.2.130:3000/ftp/package.json.bak,
+true,GET,http://192.168.2.130:3000/ftp/quarantine,
+true,GET,http://192.168.2.130:3000/ftp/quarantine/juicy_malware_linux_amd_64.url,
+true,GET,http://192.168.2.130:3000/ftp/quarantine/juicy_malware_linux_arm_64.url,
+true,GET,http://192.168.2.130:3000/ftp/quarantine/juicy_malware_macos_64.url,
+true,GET,http://192.168.2.130:3000/ftp/quarantine/juicy_malware_windows_64.exe.url,
+true,GET,http://192.168.2.130:3000/ftp/suspicious_errors.yml,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/assets/public/vendor.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/fileServer.js:39:13,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/fileServer.js:55:18,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/build/routes/vendor.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/assets/public/vendor.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:280:10,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:286:9,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:328:13,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:365:14,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:376:14,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/index.js:421:3,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/layer.js:95:5,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/express/lib/router/vendor.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/favicon_js.ico,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/assets/public/vendor.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/index.js:145:39,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/main.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/polyfills.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/runtime.js,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/styles.css,
+true,GET,http://192.168.2.130:3000/home/achilles/Desktop/owasp-juice/juice-shop/node_modules/serve-index/vendor.js,
+true,GET,http://192.168.2.130:3000/main.js,
+true,GET,http://192.168.2.130:3000/polyfills.js,
+true,GET,http://192.168.2.130:3000/robots.txt,Seed
+true,GET,http://192.168.2.130:3000/runtime.js,
+true,GET,http://192.168.2.130:3000/sitemap.xml,Seed
+true,GET,http://192.168.2.130:3000/styles.css,
+true,GET,http://192.168.2.130:3000/vendor.js,
+false,GET,http://bit.ly/2sd4HMP%5Cn*/%5Cn@media,Out of Scope
+false,GET,http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css,Out of Scope
+false,GET,http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js,Out of Scope
+false,GET,http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js,Out of Scope
+false,GET,http://fizzed.com/,Out of Scope
+false,GET,http://fizzed.com/oss/font-mfizz,Out of Scope
+false,GET,http://leanpub.com/juice-shop,Out of Scope
+false,GET,http://shop.spreadshirt.com/juiceshop,Out of Scope
+false,GET,http://shop.spreadshirt.de/juiceshop,Out of Scope
+false,GET,http://twitter.com/fizzed_inc,Out of Scope
+false,GET,http://www.w3.org/1998/MathML/,Out of Scope
+false,GET,http://www.w3.org/1999/html,Out of Scope
+false,GET,http://www.w3.org/1999/xhtml,Out of Scope
+false,GET,http://www.w3.org/1999/xlink,Out of Scope
+false,GET,http://www.w3.org/2000/svg,Out of Scope
+false,GET,http://www.w3.org/2000/xmlns/,Out of Scope
+false,GET,http://www.w3.org/XML/1998/namespace,Out of Scope
+false,GET,https://accounts.google.com/o/oauth2/v2/auth?client_id=$,Out of Scope
+false,GET,https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm,Out of Scope
+false,GET,https://docs.google.com/forms/d/e/1FAIpQLSdaNEuz0dzFA2sexCa0AJ4QOb2OYdEL04eQOLFD2Y4T-BW6ag/viewform?entry.384948954&usp=pp_url,Out of Scope
+false,GET,https://etherscan.io/address/0x0f933ab9fcaaa782d0279c300d73750e1311eae6,Out of Scope
+false,GET,https://explorer.dash.org/address/Xr556RzuwX6hg5EGpkybbv5RanJoZN17kW,Out of Scope
+false,GET,https://g.co/ng/security,Out of Scope
+false,GET,https://github.com/juice-shop/juice-shop,Out of Scope
+false,GET,https://github.com/primer/github-syntax-light,Out of Scope
+false,GET,https://github.com/zloirock/core-js,Out of Scope
+false,GET,https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE,Out of Scope
+false,GET,https://opensea.io/collection/juice-shop,Out of Scope
+false,GET,https://owasp.org/,Out of Scope
+false,GET,https://owasp-juice.shop/,Out of Scope
+false,GET,https://ponzico.win/ponzico.pdf,Out of Scope
+false,GET,https://pwning.owasp-juice.shop/companion-guide/latest/part3/donations.html,Out of Scope
+false,GET,https://socket.io/docs/v3/migrating-from-2-x-to-3-0/,Out of Scope
+false,GET,https://testnets.opensea.io/0x8343d2eb2B13A2495De435a1b15e85b98115Ce05,Out of Scope
+false,GET,https://testnets.opensea.io/assets/mumbai/0xf4817631372dca68a25a18eb7a0b36d54f3dbcf7/0,Out of Scope
+false,GET,https://twitter.com/,Out of Scope
+false,GET,https://twitter.com/intent/tweet?text,Out of Scope
+false,GET,https://www.freeprivacypolicy.com/,Out of Scope
+false,GET,https://www.googleapis.com/oauth2/v1/userinfo?access_token&alt=json,Out of Scope
+false,GET,https://www.sec.gov/investor/alerts/ia_virtualcurrencies.pdf,Out of Scope
+false,GET,https://www.stickeryou.com/products/owasp-juice-shop/794,Out of Scope
+false,GET,https://youtube.com/embed/$,Out of Scope
