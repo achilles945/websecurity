@@ -3,7 +3,9 @@
 - **Vulnerability**: SQL Injection in the login form.
 - **Description**: The login form is vulnerable to SQL injection attacks. The user input is not properly sanitized, allowing attackers to inject malicious SQL queries.
 - **Severity**: High
-- **CVEs**: CVE-2021-12345
+- **A03:2021-Injection**
+- **CWE**: CWE-89
+- **WASC**: WASC-19
 - **Affected Components**: Login page, database authentication system.
 - **Exploitability**: Easy – Any unauthenticated user can exploit this vulnerability.
 - **Impact**: The attacker can bypass authentication and access sensitive user data, potentially gaining administrative privileges.
