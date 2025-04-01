@@ -1,0 +1,25 @@
+### Vulnerability : 
+
+- **Vulnerability**: [Name of vulnerability]
+- **Description**: A brief description of the issue.
+- **Severity**: [Low/Medium/High]
+- **CVEs**: [If applicable]
+- **Affected Components**: [List of components affected]
+- **Exploitability**: [E.g., easy, moderate, hard]
+- **Impact**: [What is at risk?]
+- **Proof-of-Concept**: [Screenshot, video, or code demonstrating exploitation]
+- **Remediation**: [Steps to fix the vulnerability]
+
+
+### Vulnerability : Weak Lock Out Mechanism
+
+- **Vulnerability**: [Name of vulnerability]
+- **Description**: A brief description of the issue.
+- **Severity**: [Low/Medium/High]
+- **CVEs**: [If applicable]
+- **Affected Components**: [List of components affected]
+- **Exploitability**: [E.g., easy, moderate, hard]
+- **Impact**: [What is at risk?]
+- **Proof-of-Concept**: [Screenshot, video, or code demonstrating exploitation]
+- **Remediation**: [Steps to fix the vulnerability]--
+
