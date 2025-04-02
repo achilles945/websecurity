@@ -5,7 +5,6 @@
 - **Vulnerability**: Unauthorized Access to application-configuration.js
 - **Description**: The application exposes sensitive administrative endpoints (`/rest/admin/application-configuration` and `/rest/admin/application-version`) to unauthenticated users, allowing them to retrieve application version and configuration details. This violates access control principles and can lead to information leakage.
 - **Severity**: High
-- **CWEs**: N/A
 - **Affected Components**: 
   - `/rest/admin/application-configuration`
   - `/rest/admin/application-version`
@@ -24,12 +23,11 @@
   - Review and secure all endpoints in the `/admin` directory to prevent unauthorized access.
 
 
-### Vulnerability: Broken Access Control - Sensitive Directory Exposure via `/ftp/`
+### Vulnerability 2: Broken Access Control - Sensitive Directory Exposure via `/ftp/`
 
 - **Vulnerability**: Sensitive Directory Exposure via `/ftp/` Directory
 - **Description**: The `/ftp/` directory is publicly accessible without proper access controls, despite containing potentially sensitive or confidential files. This exposure can lead to unauthorized access to files and data, increasing the risk of data breaches, information leaks, and potential exploitation.
 - **Severity**: High
-- **CVEs**: None (Custom vulnerability, unlikely to have an existing CVE)
 - **Affected Components**: 
   - `/ftp/` directory (containing sensitive documents or data)
   - Web server configuration allowing access to `/ftp/` directory
@@ -50,12 +48,11 @@
   - **Audit and remove sensitive files** from publicly accessible directories. Ensure that sensitive data is not left in directories that are accessible without proper controls.
 
 
-### Vulnerability : Unauthorized Feedback Submission via User ID Manipulation
+### Vulnerability 3: Unauthorized Feedback Submission via User ID Manipulation
 
 - **Vulnerability**: Broken Access Control (Insecure Direct Object Reference - IDOR)
 - **Description**: The application allows users to manipulate the `userID` parameter in the request, enabling them to impersonate another user and submit feedback on their behalf. This issue arises from insufficient authorization checks, allowing unauthorized actions.
 - **Severity**: High
-- **CVEs**: None (Custom vulnerability, unlikely to have an existing CVE)
 - **Affected Components**: 
   - Feedback submission functionality
   - User authentication and authorization mechanisms
