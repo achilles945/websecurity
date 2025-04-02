@@ -48,3 +48,29 @@
   - **Implement authentication and authorization** mechanisms for accessing sensitive directories, ensuring that only legitimate users can access the data.
   - **Encrypt sensitive files** within the `/ftp/` directory to prevent unauthorized access even if the files are exposed.
   - **Audit and remove sensitive files** from publicly accessible directories. Ensure that sensitive data is not left in directories that are accessible without proper controls.
+
+
+### Vulnerability : Unauthorized Feedback Submission via User ID Manipulation
+
+- **Vulnerability**: Broken Access Control (Insecure Direct Object Reference - IDOR)
+- **Description**: The application allows users to manipulate the `userID` parameter in the request, enabling them to impersonate another user and submit feedback on their behalf. This issue arises from insufficient authorization checks, allowing unauthorized actions.
+- **Severity**: High
+- **CVEs**: None (Custom vulnerability, unlikely to have an existing CVE)
+- **Affected Components**: 
+  - Feedback submission functionality
+  - User authentication and authorization mechanisms
+- **Exploitability**: Easy
+  - The attacker can use browser developer tools (e.g., "Inspect Element" or "Network" tab) to change the `userID` parameter in the request to impersonate another user and submit feedback.
+- **Impact**:
+  - Users can perform actions that they are not authorized to perform, such as submitting feedback as other users, which could lead to false data, impersonation, and potential data integrity issues.
+  - There is a risk of malicious input or harmful content being submitted in feedback on behalf of other users.
+- **Proof-of-Concept**: 
+  - Using browser developer tools, inspect the request containing the `userID` parameter.
+  - Modify the `userID` value to that of another user and submit the feedback, which will be accepted as if it was submitted by the impersonated user.
+  - Screenshot of the modified `userID` value in the request and successful feedback submission from the impersonated user.
+- **Remediation**:
+  - **Implement proper access control**: Ensure that users can only perform actions on data and resources they are authorized to access, including feedback submission.
+  - **Perform validation and authorization checks**: Check that the user performing actions (e.g., submitting feedback) is the same as the user linked to the data being manipulated (e.g., `userID`).
+  - **Avoid exposing sensitive identifiers** like `userID` in URLs or parameters. If necessary, encrypt or obfuscate these identifiers to prevent tampering.
+  - **Test for and prevent Insecure Direct Object References (IDOR)** by performing thorough security testing and validating that each user can only access and modify their own data.
+  - **Audit and log** all user interactions with sensitive actions, like feedback submission, to detect potential abuse or attacks.

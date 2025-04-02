@@ -1,0 +1,9 @@
+<!DOCTYPE test [<!ENTITY abc PUBLIC "file" "file:///etc/passwd">]>
+<products>
+    <product>
+        <name>Chicken</name>
+        <code>101</code>
+        <tags>tasty food</tags>
+        <description>&abc;</description>
+    </product>
+</products>
