@@ -1,7 +1,7 @@
 # Penetration Testing Methodology
 
 ## 1. Introduction
-This document outlines the penetration testing methodology followed for the **Web Application Penetration Testing Project**. The test uses the **Penetration Testing Execution Standard (PTES)** as the primary framework, with integrated testing guidelines from the **OWASP Web Security Testing Guide (WSTG)**. The objective of the penetration test is to identify and exploit security vulnerabilities, providing remediation suggestions for each finding.
+This document outlines the penetration testing methodology followed for the **Web Application Penetration Testing Project**. The test uses the **OWASP Web Security Testing Guide (WSTG)** as the framework. The objective of the penetration test is to identify and exploit security vulnerabilities, providing remediation suggestions for each finding.
 
 This penetration test is conducted on a **local instance** of the **OWASP Juice Shop** web application, which is intentionally vulnerable and designed for educational purposes. All testing activities are confined to this local environment, ensuring that no real systems or applications are affected.
 
@@ -9,104 +9,86 @@ This penetration test is conducted on a **local instance** of the **OWASP Juice 
 
 ---
 
-## 2. Phases of the Penetration Test
+## 2. Phases of the Penetration Test (OWASP WSTG)
 
-### 2.1 Intelligence Gathering (Reconnaissance)
+### 2.1 Information Gathering (Reconnaissance)
 - **Objective**: Collect detailed information about the target to identify potential attack vectors.
 - **Tools**: 
    - **Nmap**: Network discovery, open ports.
    - **Whois**: Identify domain registration info.
    - **Shodan**: Identify exposed services.
+   - **Google Dorking**: Identify exposed sensitive data.
 - **Activities**:
-   - Discover subdomains, server locations, technology stack, and services.
-   - Identify domain, IP addresses, and any publicly available data.
-   - Review for any sensitive information that could aid in further testing.
+   - Discover subdomains, IP addresses, and any publicly available information.
+   - Gather metadata related to the target's web servers, application components, and network infrastructure.
+   - Identify publicly available services, APIs, and potential attack vectors.
+   - Use **WSTG-INFO** guidelines to check for exposed information about the technologies used, server configurations, etc.
 - **Deliverables**: 
-   - List of discovered assets.
+   - List of discovered assets and services.
    - Technologies and software versions used.
    - Identified subdomains and open ports.
 
-### 2.2 Vulnerability Analysis (Scanning & Enumeration)
-- **Objective**: Identify potential vulnerabilities within the target environment.
+### 2.2 Vulnerability Identification (Scanning & Security Testing)
+- **Objective**: Identify vulnerabilities within the web application by testing common attack vectors.
 - **Tools**: 
-   - **Nikto**: Web server scanning.
-   - **Burp Suite**: Proxy tool for web application scanning.
-   - **Dirb/Gobuster**: Directory and file brute forcing.
+   - **OWASP ZAP**: Automated scanner for web application vulnerabilities.
+   - **Burp Suite**: Web vulnerability scanner for identifying security flaws.
+   - **Nikto**: Web server scanner for finding known vulnerabilities.
+   - **Wget**: To download a website recursively, to download a file.
 - **Activities**:
-   - Perform a comprehensive scan for known vulnerabilities.
-   - Analyze the results of each vulnerability scan and identify critical flaws.
-   - Manually verify vulnerabilities (e.g., HTTP headers, open ports, outdated software).
+   - Perform automated vulnerability scanning to identify weaknesses such as **SQL Injection**, **Cross-Site Scripting (XSS)**, **Broken Access Control**, etc.
+   - Use **WSTG-APP** guidelines to test areas like authentication, session management, and input validation.
+   - Conduct manual testing and verification to reduce false positives and identify critical vulnerabilities.
+   - Test for vulnerabilities listed in the **OWASP Top 10**, with a focus on application-level vulnerabilities like **Injection**, **Broken Authentication**, and **Sensitive Data Exposure**.
 - **Deliverables**:
-   - Detailed vulnerability list (including CVEs, if applicable).
-   - Exposed services and any potential entry points.
+   - Comprehensive list of discovered vulnerabilities.
+   - Risk assessment of vulnerabilities based on severity.
 
-### 2.3 Exploitation
-- **Objective**: Exploit identified vulnerabilities to gain unauthorized access or control of the system.
+### 2.3 Exploiting Vulnerabilities (Proof of Concept)
+- **Objective**: Test identified vulnerabilities to confirm their exploitability.
 - **Tools**: 
-   - **SQLmap**: Automates the exploitation of SQL injection vulnerabilities.
-   - **Metasploit**: Exploits known vulnerabilities and provides custom payloads.
-   - **Custom Scripts**: Tailored scripts for specific attack vectors.
+   - **Burp Suite**: To manipulate and exploit input points.
+   - **Python Scripts**: To automate the exploitation of SQL injection vulnerabilities.
+   - **OWASP ZAP**: To verify common vulnerabilities.
 - **Activities**:
-   - Exploit **OWASP Top 10** vulnerabilities, focusing on those that offer the greatest risk (e.g., Broken Access Control, SQL Injection).
-   - Bypass authentication mechanisms and escalate privileges where possible.
-   - Exploit and test for flaws like Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and more.
+   - Verify if critical vulnerabilities, such as **SQL Injection**, **Cross-Site Scripting (XSS)**, **Broken Access Control**, can be exploited to gain unauthorized access or compromise sensitive data.
+   - Conduct manual tests to exploit issues like weak authentication mechanisms, poor session management, and insecure direct object references.
+   - Demonstrate the impact of the vulnerabilities through **proof-of-concept** attacks or by retrieving sensitive data.
 - **Deliverables**:
-   - Proof-of-concept exploits and screenshots.
-   - Detailed records of successful exploitation and compromised data.
+   - Proof-of-concept exploits, demonstrating the impact of vulnerabilities.
+   - Exploited vulnerabilities that have been confirmed as an attack vector (e.g., screenshots, logs).
 
-### 2.4 Post-Exploitation
-- **Objective**: Assess the consequences of exploitation and gather further information.
-- **Tools**:
-   - **Mimikatz**: For credential extraction on compromised systems.
-   - **Hashcat**: Cracking extracted passwords.
+### 2.4 Reporting & Remediation
+- **Objective**: Document findings, explain the impact of vulnerabilities, and provide remediation steps.
 - **Activities**:
-   - Assess data exposure, privilege escalation, and lateral movement.
-   - Investigate how deep the access goes, and whether it can be maintained (backdoors, etc.).
-   - Extract valuable data and assess its confidentiality, integrity, and availability.
+   - Write a detailed penetration testing report based on the **WSTG** methodology, including findings, vulnerabilities, and attack vectors.
+   - Provide actionable remediation steps for each vulnerability, focusing on best practices as outlined in **WSTG-APP**.
+   - Include a risk assessment for each vulnerability to help prioritize remediation efforts.
+   - Include general recommendations on securing web applications, such as improving input validation, strengthening authentication mechanisms, and addressing server misconfigurations.
 - **Deliverables**:
-   - Summary of data exposure and the extent of privilege escalation.
-   - Recommendations for mitigating persistent threats.
-
-### 2.5 Reporting & Remediation
-- **Objective**: Document findings and provide clear remediation steps.
-- **Activities**:
-   - Create a final penetration test report, detailing identified vulnerabilities, exploitation results, and their impact.
-   - Provide actionable remediation steps for each finding to mitigate risks.
-- **Deliverables**:
-   - Final **Pentest Report**.
-   - **Vulnerability Findings Summary** with associated CVE numbers and fixes.
-   - **Remediation Guide** to secure the system and patch vulnerabilities.
+   - Final **Penetration Test Report**, including a detailed analysis of vulnerabilities found.
+   - **Vulnerability Findings Summary**, listing each vulnerability with its severity and risk.
+   - **Remediation Guide**, detailing steps to mitigate risks and secure the application.
 
 ---
 
-## 3. Integration of OWASP WSTG
-The **OWASP Web Security Testing Guide (WSTG)** provides a thorough framework for web application security testing. We integrated WSTG's testing methodology into our process, particularly in phases like **Vulnerability Analysis** and **Exploitation**. Key areas from WSTG that guide our testing include:
-- **Authentication Testing**
-- **Session Management Testing**
-- **Input Validation Testing**
-- **Authorization and Access Control Testing**
-These guidelines ensure that we cover all the critical areas of web application security during the testing process.
-
----
 
 ## 4. Tools and Resources
 ### Tools Used:
 - **Nmap**: For discovering open ports and services.
 - **Burp Suite**: For interception and analysis of HTTP traffic.
-- **SQLmap**: For automating SQL injection attacks.
-- **Metasploit**: For launching various exploits against known vulnerabilities.
-- **Mimikatz**: For extracting credentials from a compromised system.
-
+- **Python Script**: For automating SQL injection attacks.
+- **Shodan**: Identify exposed services.
+- **Wget**: To download a website recursively, to download a file.
+- **OWASP ZAP**: Automated scanner for web application vulnerabilities.
 ### Resources:
 - **OWASP Web Security Testing Guide**: [OWASP WSTG](https://owasp.org/www-project-web-security-testing-guide/)
-- **Penetration Testing Execution Standard (PTES)**: [PTES](http://www.pentest-standard.org/)
-
+- **OWASP Top Ten Vulnerabilities**: [OWASP-Top-10](https://owasp.org/www-project-top-ten/)
 ---
-
 ## 5. Ethical Guidelines and Legal Considerations
 Since this project involves testing a local instance of the OWASP Juice Shop, ethical and legal considerations are minimal. However, in any real-world penetration testing scenario, ensure proper authorization is obtained, and all testing is done within legal boundaries to avoid unauthorized access to systems.
 
 ---
 
 ## 6. Conclusion
-The structured approach provided by **PTES** and **OWASP WSTG** ensures a thorough and effective penetration testing process. By following these phases, we can identify security vulnerabilities, demonstrate their potential impact, and provide practical remediation steps to improve the overall security of the web application. This methodology not only ensures comprehensive security testing but also enhances our understanding of web application security, which is crucial for both educational purposes and real-world applications.
+The structured approach provided by **OWASP WSTG** ensures a thorough and effective penetration testing process. By following these phases, we can identify security vulnerabilities, demonstrate their potential impact, and provide practical remediation steps to improve the overall security of the web application. This methodology not only ensures comprehensive security testing but also enhances our understanding of web application security, which is crucial for both educational purposes and real-world applications.

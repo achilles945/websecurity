@@ -41,17 +41,10 @@ This penetration test follows the **OWASP Web Security Testing Guide (WSTG)** Me
 
 **The methodology consists of**:
 
-1. **Information Gathering**: 
-2. **Configuration and Deployment Management Testing**: 
-3. **Identity Management Testing**: 
-4. **Authentication Testing**: 
-5. **Authorization Testing**: 
-6. **Session Management Testing**: 
-7. **Input Validation Testing**: 
-8. **Testing for Error Handling**: 
-9. **Testing for Weak Cryptography**: 
-10. **Business Logic Testing**: 
-11. **Client-side Testing**: 
+1. **Information Gathering**: Collect detailed information about the target to identify potential attack vectors.
+2. **Vulnerability Identification (Scanning & Security Testing)**: Identify vulnerabilities within the web application by testing common attack vectors.
+3. **Exploiting Vulnerabilities (Proof of Concept)**: Test identified vulnerabilities to confirm their exploitability.
+4. **AReporting & Remediation**: Document findings, explain the impact of vulnerabilities, and provide remediation steps.
 
 This test leverages the **OWASP WSTG** guidelines for thorough and comprehensive security assessments.
 
@@ -61,8 +54,8 @@ This test leverages the **OWASP WSTG** guidelines for thorough and comprehensive
 
 ## 🛠️ Tools Used  
 The following tools were used for testing:  
-- **Information Gathering:** `Nmap, Nikto, Wget`  
-- **Security Assessment:** `Nikto, ZAP, Burp Suite`  
+- **Information Gathering:** `Nmap, Nikto, Wget, Shodan`  
+- **Vulnerability Identification (Scanning & Security Testing):** `Nikto, ZAP, Burp Suite`  
 
 ---
 
