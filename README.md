@@ -39,7 +39,7 @@ This project focuses on conducting a **penetration test** on the **OWASP Juice S
 ## 🛠️ Methodology  
 This penetration test follows the **OWASP Web Security Testing Guide (WSTG)** Methodology. The WSTG is a comprehensive guide to testing the security of web applications and web services, it provides a framework of best practices used by penetration testers and organizations <br>
 
-The methodology consists of:
+**The methodology consists of**:
 
 1. **Information Gathering**: 
 2. **Configuration and Deployment Management Testing**: 
