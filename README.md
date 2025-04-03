@@ -46,7 +46,7 @@ This penetration test follows the **OWASP Web Security Testing Guide (WSTG)** Me
 
 This test leverages the **OWASP WSTG** guidelines for thorough and comprehensive security assessments.
 
-📖 Detailed methodology can be found in **[Docs/Methodology.md](Docs/Methodology.md)**.  
+📖 Detailed methodology can be found in **[docs/methodology.md](docs/methodology.md)**.  
 
 ---
 
@@ -55,7 +55,7 @@ The following tools were used for testing:
 - **Information Gathering:** `Nmap, Nikto, Wget, Shodan`  
 - **Vulnerability Identification (Scanning & Security Testing):** `Nikto, ZAP, Burp Suite`  
 
-📖 Detailed tools information can be found in **[Docs/Tools.md](Docs/Tools.md)**.  
+📖 Detailed tools information can be found in **[docs/tools.md](docs/tools.md)**.  
 
 ---
 
@@ -66,14 +66,14 @@ Identified vulnerabilities include:
 - ✅ **A05 - Security Misconfiguration** _(Improperly configured permissions, Default Credentials)_
 - ✅ **A07 – Identification & Authentication Failures** _(Weak passwords, session hijacking)_  
 
-📂 For a detailed breakdown, check **[Findings/](Findings/)**.  
+📂 For a detailed breakdown, check **[findings/](findings/)**.  
 
 ---
 
 ## 📊 Reports  
-- 📄 **Pentest Report:** [Reports/OWASP_Top_10_Pentest_Report.pdf](Reports/OWASP_Top_10_Pentest_Report.pdf)  
-- 📊 **Findings Summary:** [Reports/Vulnerability-Findings.xlsx](Reports/Vulnerability-Findings.xlsx)  
-- 🛠️ **Fixing Issues:** [Reports/Remediation_Guide.md](Reports/Remediation_Guide.md)  
+- 📄 **Pentest Report:** [reports/OWASP_Top_10_Pentest_Report.pdf](reports/OWASP_Top_10_Pentest_Report.pdf)  
+- 📊 **Findings Summary:** [reports/Vulnerability-Findings.xlsx](reports/Vulnerability-Findings.xlsx)  
+- 🛠️ **Fixing Issues:** [reports/Remediation_Guide.md](reports/Remediation_Guide.md)  
 
 ---
 
@@ -99,7 +99,7 @@ The project is organized into several directories to maintain clarity and struct
 
 - **README.md**: The main entry point for understanding the project, its objectives, and setup instructions.
 
-📖 Detailed Directory-Structure can be found in **[Docs/Directory-Structure.md](Docs/Directory-Structure.md)**.
+📖 Detailed Directory-Structure can be found in **[docs/directory-structure.md](docs/directory-structure.md)**.
 
 ---
 
