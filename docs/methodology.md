@@ -77,7 +77,7 @@ This penetration test is conducted on a **local instance** of the **OWASP Juice 
 ### Tools Used:
 - **Nmap**: For discovering open ports and services.
 - **Burp Suite**: For interception and analysis of HTTP traffic.
-- **Python Script**: For automating SQL injection attacks.
+- **Python Script**: For automating attacks.
 - **Shodan**: Identify exposed services.
 - **Wget**: To download a website recursively, to download a file.
 - **OWASP ZAP**: Automated scanner for web application vulnerabilities.
