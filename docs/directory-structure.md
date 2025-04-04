@@ -4,23 +4,23 @@ This document outlines the directory structure of the Web Application Penetratio
 
 ## Root Directory Overview
 
-- **Docs/**: Documentation related to penetration testing methodologies, tools used, findings, and remediation guides.
-  - **Methodology.md**: A detailed description of the penetration testing methodology employed in this project.
-  - **Tools.md**: Information on the tools and technologies used for testing.
+- **docs/**: Documentation related to penetration testing methodologies, tools used, findings, and remediation guides.
+  - **methodology.md**: A detailed description of the penetration testing methodology employed in this project.
+  - **tools.md**: Information on the tools and technologies used for testing.
 
-- **Findings/**: Contains the results of the penetration test, including vulnerability reports, exploitation evidence, and remediation guidelines.
-  - **Vulnerabilities/**: Contains markdown files for each identified vulnerability. These files provide detailed descriptions and exploitation information for specific vulnerabilities (e.g., Broken Access Control, Cryptographic Failures).
-  - **Evidence/**: Stores supporting evidence for findings, such as screenshots, logs, and proof-of-concept (PoC) scripts.
-    - **Screenshots/**: Screenshots capturing evidence of vulnerabilities and exploitation.
-    - **Logs/**: Logs documenting exploitation steps and test results.
-    - **PoC Scripts/**: Proof of concept scripts demonstrating the vulnerability exploit.
-  - **Remediation_Guides/**: Contains remediation advice for each vulnerability identified, including fixes and best practices.
-  - **References/**: A collection of external references, such as CVEs, articles, and documentation relevant to the vulnerabilities.
-  - **Findings.md**: A consolidated document summarizing the findings from the penetration test.
+- **findings/**: Contains the results of the penetration test, including vulnerability reports, exploitation evidence, and remediation guidelines.
+  - **vulnerabilities/**: Contains markdown files for each identified vulnerability. These files provide detailed descriptions and exploitation information for specific vulnerabilities (e.g., Broken Access Control, Cryptographic Failures).
+  - **evidence/**: Stores supporting evidence for findings, such as screenshots, logs, and proof-of-concept (PoC) scripts.
+    - **screenshots/**: Screenshots capturing evidence of vulnerabilities and exploitation.
+    - **logs/**: Logs documenting exploitation steps and test results.
+    - **poc-scripts/**: Proof of concept scripts demonstrating the vulnerability exploit.
+  - **remediation-guides/**: Contains remediation advice for each vulnerability identified, including fixes and best practices.
+  - **references/**: A collection of external references, such as CVEs, articles, and documentation relevant to the vulnerabilities.
+  - **findings.md**: A consolidated document summarizing the findings from the penetration test.
 
-- **Reports/**: Contains the final penetration testing report, executive summary, and detailed findings with corresponding remediation steps.
+- **reports/**: Contains the final penetration testing report, executive summary, and detailed findings with corresponding remediation steps.
   
-- **Scripts/**: Stores automation scripts designed to assist in penetration testing, such as vulnerability scanning and exploitation tools.
+- **scripts/**: Stores automation scripts designed to assist in penetration testing, such as vulnerability scanning and exploitation tools.
 
 - **juice-shop-setup.md**: A setup guide for deploying OWASP Juice Shop locally for testing purposes.
 
@@ -29,11 +29,11 @@ This document outlines the directory structure of the Web Application Penetratio
 ## Directory Tree
 
     Web-Application-Pentest-Project/
-    ├── Docs/
-    │   ├── Methodology.md
-    │   ├── Tools.md
-    ├── Findings/
-    │   ├── Vulnerabilities/
+    ├── docs/
+    │   ├── methodology.md
+    │   ├── tools.md
+    ├── findings/
+    │   ├── vulnerabilities/
     │   │   ├── A01:2021 - Broken-Access-Control.md
     │   │   ├── A02:2021 - Cryptographic-Failures.md
     │   │   ├── A03:2021 - Injection.md
@@ -44,11 +44,11 @@ This document outlines the directory structure of the Web Application Penetratio
     │   │   ├── A08:2021 - Software-and-Data-Integrity-Failures.md
     │   │   ├── A09:2021 - Security-Logging-and-Monitoring-Failures.md
     │   │   ├── A10:2021 - Server-Side-Request-Forgery(SSRF).md
-    │   ├── Evidence/
-    │   │   ├── Screenshots/
-    │   │   ├── Logs/
-    │   │   ├── PoC Scripts/
-    │   ├── Remediation_Guides/
+    │   ├── evidence/
+    │   │   ├── screenshots/
+    │   │   ├── logs/
+    │   │   ├── poc-scripts/
+    │   ├── remediation-guides/
     │   │   ├── A01:2021 - Broken-Access-Control.md
     │   │   ├── A02:2021 - Cryptographic-Failures.md
     │   │   ├── A03:2021 - Injection.md
@@ -59,37 +59,37 @@ This document outlines the directory structure of the Web Application Penetratio
     │   │   ├── A08:2021 - Software-and-Data-Integrity-Failures.md
     │   │   ├── A09:2021 - Security-Logging-and-Monitoring-Failures.md
     │   │   ├── A10:2021 - Server-Side-Request-Forgery(SSRF).md
-    │   ├── References/
-    │   ├── Findings.md
-    ├── Reports/
-    ├── Scripts/
+    │   ├── references/
+    │   ├── findings.md
+    ├── reports/
+    ├── scripts/
     ├── juice-shop-setup.md
     └── README.md
 
 
 ## Detailed Folder Description
 
-### `Docs/`
+### `docs/`
 This folder holds all documentation files.
-- **Methodology.md**: Details the penetration testing approach, including reconnaissance, scanning, exploitation, and post-exploitation techniques.
-- **Tools.md**: Lists the tools and technologies used during the penetration test, with explanations of their purpose and usage.
+- **methodology.md**: Details the penetration testing approach, including reconnaissance, scanning, exploitation, and post-exploitation techniques.
+- **tools.md**: Lists the tools and technologies used during the penetration test, with explanations of their purpose and usage.
 
-### `Findings/`
+### `findings/`
 This folder includes all findings from the penetration test, organized as follows:
-- **Vulnerabilities/**: Each markdown file corresponds to a specific vulnerability identified during the test (e.g., Broken Access Control, Cryptographic Failures). These files detail the nature of the vulnerability and how it was discovered.
-- **Evidence/**: Contains evidence that supports the findings.
-  - **Screenshots/**: Visual proof of vulnerabilities or exploitation attempts.
-  - **Logs/**: Logs that document the testing process and exploitation steps.
-  - **PoC Scripts/**: Scripts demonstrating proof of concept for the vulnerabilities.
-- **Remediation_Guides/**: Detailed recommendations and fixes for each identified vulnerability.
-- **References/**: Relevant external documentation, including CVE links, OWASP resources, and other industry standards.
+- **vulnerabilities/**: Each markdown file corresponds to a specific vulnerability identified during the test (e.g., Broken Access Control, Cryptographic Failures). These files detail the nature of the vulnerability and how it was discovered.
+- **evidence/**: Contains evidence that supports the findings.
+  - **screenshots/**: Visual proof of vulnerabilities or exploitation attempts.
+  - **logs/**: Logs that document the testing process and exploitation steps.
+  - **poc-scripts/**: Scripts demonstrating proof of concept for the vulnerabilities.
+- **remediation-guides/**: Detailed recommendations and fixes for each identified vulnerability.
+- **references/**: Relevant external documentation, including CVE links, OWASP resources, and other industry standards.
 
-### `Reports/`
+### `reports/`
 This folder contains the final deliverables of the penetration testing engagement:
-- **Pentest Report**: A comprehensive report summarizing findings, risks, and remediation advice.
-- **Findings Summary**: An executive summary for stakeholders.
+- **pentest-report**: A comprehensive report summarizing findings, risks, and remediation advice.
+- **findings-summary**: An executive summary for stakeholders.
 
-### `Scripts/`
+### `scripts/`
 Automation scripts used to conduct penetration testing and vulnerability scans.
 
 ### `juice-shop-setup.md`
@@ -99,9 +99,9 @@ A guide to set up the OWASP Juice Shop application locally for testing and train
 Provides an overview of the project, instructions for setup, and how to use the resources in the repository.
 
 ## Notes
-- **Findings** is the primary folder for in-depth information on vulnerabilities, exploitation, and remediation.
-- **Reports** is where the final penetration testing report and summary of findings reside.
-- **Scripts** contains automation tools that streamline testing tasks.
+- **findings** is the primary folder for in-depth information on vulnerabilities, exploitation, and remediation.
+- **reports** is where the final penetration testing report and summary of findings reside.
+- **scripts** contains automation tools that streamline testing tasks.
 
 This structure is designed to provide clear organization for efficient workflow and ease of access to important resources in the penetration testing process.
 
