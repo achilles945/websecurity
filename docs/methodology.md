@@ -73,7 +73,7 @@ This penetration test is conducted on a **local instance** of the **OWASP Juice 
 ---
 
 
-## 4. Tools and Resources
+## 3. Tools and Resources
 ### Tools Used:
 - **Nmap**: For discovering open ports and services.
 - **Burp Suite**: For interception and analysis of HTTP traffic.
@@ -85,10 +85,10 @@ This penetration test is conducted on a **local instance** of the **OWASP Juice 
 - **OWASP Web Security Testing Guide**: [OWASP WSTG](https://owasp.org/www-project-web-security-testing-guide/)
 - **OWASP Top Ten Vulnerabilities**: [OWASP-Top-10](https://owasp.org/www-project-top-ten/)
 ---
-## 5. Ethical Guidelines and Legal Considerations
+## 4. Ethical Guidelines and Legal Considerations
 Since this project involves testing a local instance of the OWASP Juice Shop, ethical and legal considerations are minimal. However, in any real-world penetration testing scenario, ensure proper authorization is obtained, and all testing is done within legal boundaries to avoid unauthorized access to systems.
 
 ---
 
-## 6. Conclusion
+## 5. Conclusion
 The structured approach provided by **OWASP WSTG** ensures a thorough and effective penetration testing process. By following these phases, we can identify security vulnerabilities, demonstrate their potential impact, and provide practical remediation steps to improve the overall security of the web application. This methodology not only ensures comprehensive security testing but also enhances our understanding of web application security, which is crucial for both educational purposes and real-world applications.
