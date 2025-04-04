@@ -47,7 +47,7 @@
   5. **Disable or Remove Default Accounts**: If the application does not require the default administrator account, consider removing or disabling it entirely.
 
 
-
+---
 
 ### Vulnerability 3: Detailed Error Messages 
 
@@ -82,8 +82,9 @@
   3. **Sanitize Logs**: Ensure that sensitive information such as file paths, user data, or stack traces is not logged in production. Use sanitized or obfuscated logs for auditing purposes.
   4. **Configure Application for Secure Error Handling**: Review the error-handling configuration in the app to ensure that only necessary details are logged, and the application responds with appropriate, non-sensitive error messages.
 
+---
 
-### Vulnerability: Exposure of PGP Public Key in `security.txt`
+### Vulnerability 4: Exposure of PGP Public Key in `security.txt`
 
 - **Vulnerability**: Information Exposure
 - **Description**: The PGP public key is exposed in the `security.txt` file, which is intended to provide contact information and other details for security-related communication. While the public key itself is not inherently sensitive, its exposure in an unprotected file can provide attackers with information about the encryption infrastructure and potentially aid in cryptographic attacks if misused.
@@ -111,7 +112,9 @@
   - Consider revising the purpose of the `security.txt` file to avoid disclosing excessive security-related information to the public.
   - If the PGP key must be publicly available, limit its exposure to the relevant parties and ensure that proper key management practices are followed.
 
-### Vulnerability: Sensitive Directory Exposed via robots.txt
+---
+
+### Vulnerability 5: Sensitive Directory Exposed via robots.txt
 
 - **Vulnerability**: Sensitive Directory Exposure via `robots.txt`
 - **Description**: The `robots.txt` file publicly exposes a sensitive directory (`/ftp/`) which contains confidential files. While `robots.txt` is used to guide web crawlers about which parts of a website to crawl, it is also publicly accessible. If the `/ftp/` directory is exposed via this file and remains publicly accessible, attackers can potentially exploit it to gain unauthorized access to confidential data.
@@ -136,3 +139,5 @@
   - Consider using **authentication and authorization** to secure sensitive folders.
   - Audit the contents of the `/ftp/` directory and ensure no sensitive files are publicly accessible.
   - **Remove references** to sensitive directories in the `robots.txt` file.
+
+---

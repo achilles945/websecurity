@@ -40,3 +40,5 @@
   - Introduce a self-service unlock feature that sends an email to the registered email address for account recovery.
   - Allow manual administrator unlock with positive user identification to ensure that only legitimate users can regain access to their accounts.
   - Consider implementing CAPTCHA or other forms of challenge-response tests after a certain number of failed attempts to further mitigate automated attacks.
+
+  ---

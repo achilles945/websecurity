@@ -22,6 +22,7 @@
   - Apply the principle of least privilege, ensuring that only authorized users can access configuration and versioning details.
   - Review and secure all endpoints in the `/admin` directory to prevent unauthorized access.
 
+---
 
 ### Vulnerability 2: Broken Access Control - Sensitive Directory Exposure via `/ftp/`
 
@@ -48,6 +49,8 @@
   - **Audit and remove sensitive files** from publicly accessible directories. Ensure that sensitive data is not left in directories that are accessible without proper controls.
 
 
+---
+
 ### Vulnerability 3: Unauthorized Feedback Submission via User ID Manipulation
 
 - **Vulnerability**: Broken Access Control (Insecure Direct Object Reference - IDOR)
@@ -71,3 +74,6 @@
   - **Avoid exposing sensitive identifiers** like `userID` in URLs or parameters. If necessary, encrypt or obfuscate these identifiers to prevent tampering.
   - **Test for and prevent Insecure Direct Object References (IDOR)** by performing thorough security testing and validating that each user can only access and modify their own data.
   - **Audit and log** all user interactions with sensitive actions, like feedback submission, to detect potential abuse or attacks.
+
+
+---

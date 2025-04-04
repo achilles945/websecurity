@@ -45,7 +45,8 @@
   - **Database User Permissions**: Limit the privileges of the database user account that the application uses. Ensure it has only the necessary permissions for the application to function and avoid granting administrative access unless absolutely required.
   - **Regular Security Audits**: Perform regular security audits, including penetration testing and code reviews, to detect and remediate SQL injection vulnerabilities.
 
-  
+  ---
+
   ### Vulnerability 2: DOM-based Cross-Site Scripting (XSS) in Search Bar
 
 - **Vulnerability**: DOM-based Cross-Site Scripting (XSS)
@@ -75,3 +76,6 @@
   - **Implement Content Security Policy (CSP)**: Implement a Content Security Policy (CSP)
   - **Conduct regular security testing**: Use security testing tools like OWASP ZAP, Burp Suite, or manual penetration testing to detect and mitigate DOM-based XSS vulnerabilities.
   - **Educate developers** on secure coding practices, particularly in handling user input and client-side scripting vulnerabilities.
+
+
+---
