@@ -14,9 +14,7 @@ This document outlines the directory structure of the Web Application Penetratio
     - **screenshots/**: Screenshots capturing evidence of vulnerabilities and exploitation.
     - **logs/**: Logs documenting exploitation steps and test results.
     - **poc-scripts/**: Proof of concept scripts demonstrating the vulnerability exploit.
-  - **remediation-guides/**: Contains remediation advice for each vulnerability identified, including fixes and best practices.
   - **references/**: A collection of external references, such as CVEs, articles, and documentation relevant to the vulnerabilities.
-  - **findings.md**: A consolidated document summarizing the findings from the penetration test.
 
 - **reports/**: Contains the final penetration testing report, executive summary, and detailed findings with corresponding remediation steps.
   
@@ -48,19 +46,7 @@ This document outlines the directory structure of the Web Application Penetratio
     │   │   ├── screenshots/
     │   │   ├── logs/
     │   │   ├── poc-scripts/
-    │   ├── remediation-guides/
-    │   │   ├── A01:2021 - Broken-Access-Control.md
-    │   │   ├── A02:2021 - Cryptographic-Failures.md
-    │   │   ├── A03:2021 - Injection.md
-    │   │   ├── A04:2021 - Insecure-Design.md
-    │   │   ├── A05:2021 - Security-Misconfiguration.md
-    │   │   ├── A06:2021 - Vulnerable-and-Outdated-Components.md
-    │   │   ├── A07:2021 - Identification-and-Authentication-Failures.md
-    │   │   ├── A08:2021 - Software-and-Data-Integrity-Failures.md
-    │   │   ├── A09:2021 - Security-Logging-and-Monitoring-Failures.md
-    │   │   ├── A10:2021 - Server-Side-Request-Forgery(SSRF).md
     │   ├── references/
-    │   ├── findings.md
     ├── reports/
     ├── scripts/
     ├── juice-shop-setup.md
@@ -81,7 +67,6 @@ This folder includes all findings from the penetration test, organized as follow
   - **screenshots/**: Visual proof of vulnerabilities or exploitation attempts.
   - **logs/**: Logs that document the testing process and exploitation steps.
   - **poc-scripts/**: Scripts demonstrating proof of concept for the vulnerabilities.
-- **remediation-guides/**: Detailed recommendations and fixes for each identified vulnerability.
 - **references/**: Relevant external documentation, including CVE links, OWASP resources, and other industry standards.
 
 ### `reports/`

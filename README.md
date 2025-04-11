@@ -71,9 +71,9 @@ Identified vulnerabilities include:
 ---
 
 ## Reports  
-- 📄 **Pentest Report:** [reports/OWASP_Top_10_Pentest_Report.pdf](reports/OWASP_Top_10_Pentest_Report.pdf)  
-- 📊 **Findings Summary:** [reports/Vulnerability-Findings.xlsx](reports/Vulnerability-Findings.xlsx)  
-- 🛠️ **Fixing Issues:** [reports/Remediation_Guide.md](reports/Remediation_Guide.md)  
+- 📄 **Pentest Report:** [reports/juice-shop-pentest-report.pdf](reports/juice-shop-pentest-report.pdf)  
+- 📊 **Findings Summary:** [reports/vulnerability-findings.xlsx](reports/vulnerability-findings.xlsx)  
+- 🛠️ **Fixing Issues:** [reports/remediation_guide.md](reports/remediation_guide.md)  
 
 ---
 
@@ -88,8 +88,7 @@ The project is organized into several directories to maintain clarity and struct
 - **Findings/**: Contains reports and evidence of vulnerabilities identified during testing.
   - **Vulnerabilities/**: Vulnerability reports with detailed exploitation information.
   - **Evidence/**: Supporting evidence like screenshots, logs, and proof-of-concept scripts.
-  - **Remediation_Guides/**: Guides to remediate each identified vulnerability.
-  - **Findings.md**: A summary of all findings.
+  - **References/**: Documentations used for references.
 
 - **Reports/**: Contains the final penetration testing report and executive summaries.
 
